@@ -285,12 +285,19 @@ python web_demo_tuned.py
 ## 3. 常见问题 (FAQ)
 
 1. **Q**：若在加载 Qwen-7B-Chat 模型时出现显存不足怎么办？
-    **A**：建议使用 [LoRA](https://github.com/microsoft/LoRA) 或 8-bit 量化方法（如 [bitsandbytes](https://github.com/TimDettmers/bitsandbytes)）。此外，可考虑在多 GPU 环境下分布式加载。
+
+   **A**：建议使用 [LoRA](https://github.com/microsoft/LoRA) 或 8-bit 量化方法（如 [bitsandbytes](https://github.com/TimDettmers/bitsandbytes)）。此外，可考虑在多 GPU 环境下分布式加载。
+
 2. **Q**：数据质量如何把控？
-    **A**：在 `data_cleaner.py` 中可自定义过滤逻辑，比如去除过短回答、过长噪音等文本。也可在数据可视化阶段检查科室分布，尽量保证均衡。
+
+   **A**：在 `data_cleaner.py` 中可自定义过滤逻辑，比如去除过短回答、过长噪音等文本。也可在数据可视化阶段检查科室分布，尽量保证均衡。
+
 3. **Q**：模型训练好后，如何保证在实际问答中保持专业性与安全性？
+
     **A**：建议在推理后加入规则模块或审查模块进行二次过滤。同时，对于医疗领域模型应在输出末尾加入免责声明，如“本回答仅供参考，不能替代医生诊断。”
+
 4. **Q**：Flash Attention 是否必须安装？
+
     **A**：不是必需，但强烈建议安装，以提高大模型训练和推理效率并降低显存占用。
 
 ------
