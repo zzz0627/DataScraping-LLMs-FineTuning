@@ -66,7 +66,7 @@ git clone https://github.com/zzz0627/DataScraping-LLMs-FineTuning.git
 
 > **注**：此处默认读者已配置好 `Git`，若未安装可前往 [官网](https://git-scm.com/downloads) 安装（仅针对 Windows 用户，Linux 用户可直接通过命令行拉取）。
 >
-> 也可直接通过 [GitHub链接](https://github.com/zzz0627/DataScraping-LLMs-FineTuning) 下载本项目。
+> 也可直接通过 [GitHub链接](https://github.com/zzz0627/DataScraping-LLMs-FineTuning) 下载本项目。推荐虚拟环境安装 `Python3.9及以上` 版本。
 
 ### 安装依赖
 
@@ -74,8 +74,9 @@ git clone https://github.com/zzz0627/DataScraping-LLMs-FineTuning.git
 pip install -r requirements.txt
 ```
 
->  **注**：若你所在的环境网络访问国外资源缓慢，可考虑使用国内镜像源来安装依赖包.
-
+>  **注**：此依赖包不包括`torch`，请各位读者自行下载。本项目推荐使用`CUDA 12.1`和`PyTorch 2.1.0`。
+>
+> 若你所在的环境网络访问国外资源缓慢，可考虑使用国内镜像源来安装依赖包。
 ------
 
 **本项目可分为构建微调数据集、针对 Qwen-7B-Chat 进行微调两部分，下面逐一介绍。**
