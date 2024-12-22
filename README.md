@@ -317,7 +317,7 @@ python web_demo_tuned.py
 
 ## 5. 许可证
 
-本项目使用 [MIT License](https://github.com/zzz0627/DataScraping-LLMs-FineTuning/blob/main/LICENSE) 进行开源。你可以自由复制、修改和分发本项目的代码，但需保留本项目的版权和许可信息。
+本项目使用 [MIT License](https://github.com/zzz0627/DataScraping-LLMs-FineTuning/blob/master/LICENSE) 进行开源。你可以自由复制、修改和分发本项目的代码，但需保留本项目的版权和许可信息。
 
 ------
 
