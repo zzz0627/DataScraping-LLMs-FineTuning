@@ -119,7 +119,7 @@ python main.py
 
 #### 1.4.1 数据清洗与分类
 
-此步骤将利用 [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))进行初步的**语义分析**与**科室分类**。结果文件将保存在 `data/processed/`。在此阶段也可配置过滤逻辑，比如去除噪音数据或低质量回答。
+此步骤将利用 [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)) 进行初步的**语义分析**与**科室分类**。结果文件将保存在 `data/processed/`。在此阶段也可配置过滤逻辑，比如去除噪音数据或低质量回答。
 
 ```bash
 cd PreProcessing/
@@ -197,7 +197,7 @@ cd flash-attention && pip install .
    vim web_demo.py
    
    # 找到 DEFAULT_CKPT_PATH 并修改
-   # 鉴于已经将模型文件下载到当前目录下，直接改为Qwen-7B-Instruct即可
+   # 鉴于已经将模型文件下载到当前目录下，直接改为Qwen-7B-Chat即可
    DEFAULT_CKPT_PATH = 'Qwen-7B-Chat'
    
    # 修改完成后保存并退出
@@ -277,7 +277,7 @@ DEFAULT_CKPT_PATH = 'output_qwen'
 python web_demo_tuned.py
 ```
 
-通过简单的试用后不难发现模型针对医疗问题的推理能力有显著提升
+通过简单的试用后不难发现模型针对医疗问题的推理能力有显著提升。
 
 > 注：此处运行脚本很有可能提示xxx文件找不到，此时需要手动复制`Qwen-7B-Chat/`目录下的同名文件到`output_qwen/`目录中。
 
