@@ -155,7 +155,7 @@ python visualizer.py
 
 ### 2.1 安装 [flash-attention](https://github.com/Dao-AILab/flash-attention)
 
-`flash_attention` 能够在大模型推理和训练时有效降低显存占用、提升速度。安装方式如下：
+`flash-attention` 能够在大模型推理和训练时有效降低显存占用、提升速度。安装方式如下：
 
 ```bash
 git clone https://github.com/Dao-AILab/flash-attention
